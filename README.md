@@ -1,0 +1,2 @@
+# hashids
+Laravel Hashids
