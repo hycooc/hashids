@@ -1,0 +1,45 @@
+{
+    "name": "hycooc/hashids",
+    "description": "laravel hashids",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "hashids",  "hash", "ids", "encrypt", "decrypt"],
+    "authors": [
+        {
+            "name": "baoerge",
+            "email": "baoerge123@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.6",
+        "graham-campbell/manager": "^3.0",
+        "hashids/hashids": "^2.0",
+        "illuminate/contracts": "^5.4",
+        "illuminate/support": "^5.4"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hycooc\\Hashids\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hycooc\\Tests\\Hashids\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hycooc\\Hashids\\HashidsServiceProvider"
+            ],
+            "aliases": {
+                "Hashids": "Hycooc\\Hashids\\Facades\\Hashids"
+            }
+        }
+    }
+}
