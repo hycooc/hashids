@@ -28,7 +28,7 @@ class HashidsServiceProvider extends ServiceProvider
      */
     public function setupConfig()
     {
-        $source = realpath($raw = __DIR__ . '/config/hashids.php') ?: $raw;
+        $source = realpath($raw = __DIR__ . '/../config/hashids.php') ?: $raw;
 
         if ($this->app instanceof Application && $this->app->runningInConsole()) {
             $this->publishes([
